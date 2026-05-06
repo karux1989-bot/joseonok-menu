@@ -26,7 +26,6 @@
   .pattern-border { height:12px; background:repeating-linear-gradient(90deg,var(--accent-gold-light) 0px,var(--accent-gold-light) 6px,transparent 6px,transparent 12px); opacity:0.25; }
   .header { padding:36px 40px 28px; text-align:center; }
   .calligraphy-logo { height:auto; max-width:80%; max-height:72px; display:block; margin:0 auto; object-fit:contain; }
-  @media(prefers-color-scheme:dark) { .calligraphy-logo { filter:invert(1); } }
   .restaurant-sub { font-family:'Noto Serif KR',serif; font-size:13px; color:var(--text-mid); letter-spacing:2px; margin-bottom:6px; }
   .restaurant-en { font-family:'Playfair Display',serif; font-size:14px; color:var(--accent-gold); letter-spacing:4px; text-transform:uppercase; }
   .header-line { width:60px; height:2px; background:var(--accent-gold); margin:16px auto 0; }
@@ -373,6 +372,7 @@ function closeDetail() {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeDetail();
 });
+
 </script>
 
 </body>
