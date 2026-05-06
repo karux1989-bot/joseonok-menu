@@ -397,23 +397,22 @@ function switchLang(lang) {
   document.querySelector('.lang-btn[data-lang="'+lang+'"]').classList.add('active');
 
   // 카드 메뉴명 업데이트
+  const nameMap = { ko: 'ko', en: 'en', zh: 'cn', ja: 'jp' };
   document.querySelectorAll('.menu-card').forEach(card => {
     const id = card.getAttribute('onclick').match(/'([^']+)'/)[1];
     const item = menuData.find(m => m.id === id);
     if (!item) return;
-    const nameMap = { ko: item.ko, en: item.en, zh: item.cn, ja: item.jp };
-    card.querySelector('.menu-name-ko').textContent = nameMap[lang] || item.ko;
-    // 서브 이름: 한국어 선택시 영어 표시, 그 외에는 한국어 표시
-    card.querySelector('.menu-name-en').textContent = lang === 'ko' ? item.en : item.ko;
-    // 외국어 라인
+
     if (lang === 'ko') {
-      card.querySelector('.menu-name-foreign').innerHTML = '<span>'+item.cn+'</span> | <span>'+item.jp+'</span>';
-    } else if (lang === 'en') {
-      card.querySelector('.menu-name-foreign').innerHTML = '<span>'+item.cn+'</span> | <span>'+item.jp+'</span>';
-    } else if (lang === 'zh') {
-      card.querySelector('.menu-name-foreign').innerHTML = '<span>'+item.en+'</span> | <span>'+item.jp+'</span>';
+      // 한국어: 한국어만 표시
+      card.querySelector('.menu-name-ko').textContent = item.ko;
+      card.querySelector('.menu-name-en').textContent = '';
+      card.querySelector('.menu-name-foreign').style.display = 'none';
     } else {
-      card.querySelector('.menu-name-foreign').innerHTML = '<span>'+item.en+'</span> | <span>'+item.cn+'</span>';
+      // 다른 언어: 해당 언어 메인 + 한국어 서브
+      card.querySelector('.menu-name-ko').textContent = item[nameMap[lang]];
+      card.querySelector('.menu-name-en').textContent = item.ko;
+      card.querySelector('.menu-name-foreign').style.display = 'none';
     }
   });
 
@@ -424,21 +423,48 @@ function switchLang(lang) {
   const dividerEns = document.querySelectorAll('.section-divider-en');
   if (dividers[0]) dividers[0].textContent = titles[0];
   if (dividers[1]) dividers[1].textContent = titles[1];
-  if (dividerEns[0]) dividerEns[0].textContent = lang === 'ko' ? 'Food Menu' : '';
-  if (dividerEns[1]) dividerEns[1].textContent = lang === 'ko' ? 'Drinks & Beverages' : '';
+  // 서브타이틀: 한국어면 영어, 다른 언어면 한국어
+  if (dividerEns[0]) dividerEns[0].textContent = lang === 'ko' ? 'Food Menu' : '식사 메뉴';
+  if (dividerEns[1]) dividerEns[1].textContent = lang === 'ko' ? 'Drinks & Beverages' : '주류';
 }
 
 function showDetail(id) {
   const item = menuData.find(m => m.id === id);
   if (!item) return;
-  document.getElementById('detailKo').textContent = item.ko;
-  document.getElementById('detailEn').textContent = item.en;
-  document.getElementById('detailForeign').textContent = item.cn + ' | ' + item.jp;
+  const lang = currentLang;
+  const nameMap = { ko: 'ko', en: 'en', zh: 'cn', ja: 'jp' };
+  const descMap = { ko: 'desc', en: 'desc_en', zh: 'desc_cn', ja: 'desc_jp' };
+
+  if (lang === 'ko') {
+    // 한국어: 한국어 이름만, 설명은 한국어만
+    document.getElementById('detailKo').textContent = item.ko;
+    document.getElementById('detailEn').textContent = '';
+    document.getElementById('detailForeign').textContent = '';
+    document.getElementById('detailDescKo').textContent = item.desc;
+    // 다른 언어 설명 숨기기
+    document.querySelector('.detail-desc-en').textContent = '';
+    document.querySelector('.detail-desc-cn').textContent = '';
+    document.querySelector('.detail-desc-jp').textContent = '';
+    document.querySelectorAll('.detail-lang-label').forEach(el => el.style.display = 'none');
+  } else {
+    // 다른 언어: 해당 언어 메인 + 한국어 서브
+    document.getElementById('detailKo').textContent = item[nameMap[lang]];
+    document.getElementById('detailEn').textContent = item.ko;
+    document.getElementById('detailForeign').textContent = '';
+    // 설명: 해당 언어 + 한국어만
+    document.getElementById('detailDescKo').textContent = item[descMap[lang]];
+    document.querySelector('.detail-desc-en').textContent = '';
+    document.querySelector('.detail-desc-cn').textContent = '';
+    document.querySelector('.detail-desc-jp').textContent = '';
+    // 한국어 설명을 en 슬롯에 표시
+    const labels = document.querySelectorAll('.detail-lang-label');
+    labels.forEach(el => el.style.display = 'none');
+    labels[0].textContent = '한국어';
+    labels[0].style.display = '';
+    document.querySelector('.detail-desc-en').textContent = item.desc;
+  }
+
   document.getElementById('detailPrice').innerHTML = item.price + '<span class="won">원</span>';
-  document.getElementById('detailDescKo').textContent = item.desc;
-  document.getElementById('detailDescEn').textContent = item.desc_en;
-  document.getElementById('detailDescCn').textContent = item.desc_cn;
-  document.getElementById('detailDescJp').textContent = item.desc_jp;
   document.getElementById('detailOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
 }
