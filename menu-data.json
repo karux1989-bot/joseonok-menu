@@ -76,10 +76,10 @@
           "price": 10000,
           "image": "images/bibimbap.jpg",
           "description": {
-            "ko": "30여 가지 나물과 고추장을 넣어 비벼 먹는 전주 전통 비빔밥. 콩나물국과 함께 제공됩니다.",
-            "en": "Traditional Jeonju bibimbap with over 30 kinds of seasoned vegetables and gochujang. Served with bean sprout soup on the side.",
-            "zh": "加入30多种拌菜和辣椒酱拌匀食用的全州传统拌饭。搭配黄豆芽汤一同供应。",
-            "ja": "30種以上のナムルとコチュジャンを混ぜて食べる全州伝統ビビンバ。もやしスープと共に提供されます。"
+            "ko": "다양한 나물과 고추장을 넣어 비벼 먹는 전주 전통 비빔밥. 콩나물국과 함께 제공됩니다.",
+            "en": "Traditional Jeonju bibimbap with assorted seasoned vegetables and gochujang. Served with bean sprout soup on the side.",
+            "zh": "加入多种拌菜和辣椒酱拌匀食用的全州传统拌饭。搭配黄豆芽汤一同供应。",
+            "ja": "様々なナムルとコチュジャンを混ぜて食べる全州伝統ビビンバ。もやしスープと共に提供されます。"
           }
         },
         {
