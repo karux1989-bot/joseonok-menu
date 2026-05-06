@@ -16,7 +16,12 @@
       "items": [
         {
           "id": "bulgogi",
-          "name": { "ko": "뚝배기불고기", "en": "Hot Pot Bulgogi", "zh": "砂锅烤牛肉", "ja": "土鍋プルコギ" },
+          "name": {
+            "ko": "뚝배기불고기",
+            "en": "Hot Pot Bulgogi",
+            "zh": "砂锅烤牛肉",
+            "ja": "土鍋プルコギ"
+          },
           "price": 13000,
           "image": "images/bulgogi.jpg",
           "description": {
@@ -28,7 +33,12 @@
         },
         {
           "id": "yukhoe-bibimbap",
-          "name": { "ko": "육회비빔밥", "en": "Beef Tartare Bibimbap", "zh": "生拌牛肉拌饭", "ja": "ユッケビビンバ" },
+          "name": {
+            "ko": "육회비빔밥",
+            "en": "Beef Tartare Bibimbap",
+            "zh": "生拌牛肉拌饭",
+            "ja": "ユッケビビンバ"
+          },
           "price": 13000,
           "image": "images/yukhoe-bibimbap.jpg",
           "description": {
@@ -40,7 +50,12 @@
         },
         {
           "id": "dolsot-bibimbap",
-          "name": { "ko": "전주돌솥비빔밥", "en": "Jeonju Stone Pot Bibimbap", "zh": "全州石锅拌饭", "ja": "全州石焼きビビンバ" },
+          "name": {
+            "ko": "전주돌솥비빔밥",
+            "en": "Jeonju Stone Pot Bibimbap",
+            "zh": "全州石锅拌饭",
+            "ja": "全州石焼きビビンバ"
+          },
           "price": 12000,
           "image": "images/dolsot-bibimbap.jpg",
           "description": {
@@ -52,7 +67,12 @@
         },
         {
           "id": "bibimbap",
-          "name": { "ko": "전주비빔밥", "en": "Jeonju Bibimbap", "zh": "全州拌饭", "ja": "全州ビビンバ" },
+          "name": {
+            "ko": "전주비빔밥",
+            "en": "Jeonju Bibimbap",
+            "zh": "全州拌饭",
+            "ja": "全州ビビンバ"
+          },
           "price": 10000,
           "image": "images/bibimbap.jpg",
           "description": {
@@ -64,7 +84,12 @@
         },
         {
           "id": "kongnamul-gukbap",
-          "name": { "ko": "콩나물국밥", "en": "Bean Sprout Soup with Rice", "zh": "黄豆芽汤饭", "ja": "豆もやしクッパ" },
+          "name": {
+            "ko": "콩나물국밥",
+            "en": "Bean Sprout Soup with Rice",
+            "zh": "黄豆芽汤饭",
+            "ja": "豆もやしクッパ"
+          },
           "price": 8000,
           "image": "images/kongnamul-gukbap.jpg",
           "description": {
@@ -76,7 +101,12 @@
         },
         {
           "id": "yukhoe",
-          "name": { "ko": "육회", "en": "Korean Beef Tartare", "zh": "生拌牛肉", "ja": "ユッケ" },
+          "name": {
+            "ko": "육회",
+            "en": "Korean Beef Tartare",
+            "zh": "生拌牛肉",
+            "ja": "ユッケ"
+          },
           "price": 22000,
           "image": "images/yukhoe.jpg",
           "description": {
@@ -88,7 +118,12 @@
         },
         {
           "id": "cheese-tteokgalbi",
-          "name": { "ko": "치즈떡갈비", "en": "Cheese Grilled Short Rib Patties", "zh": "芝士烤牛肉饼", "ja": "チーズトッカルビ" },
+          "name": {
+            "ko": "치즈떡갈비",
+            "en": "Cheese Grilled Short Rib Patties",
+            "zh": "芝士烤牛肉饼",
+            "ja": "チーズトッカルビ"
+          },
           "price": 22000,
           "image": "images/cheese-tteokgalbi.jpg",
           "description": {
@@ -100,7 +135,12 @@
         },
         {
           "id": "yukjeon",
-          "name": { "ko": "육전", "en": "Pan-fried Battered Beef", "zh": "煎牛肉饼", "ja": "牛肉チヂミ" },
+          "name": {
+            "ko": "육전",
+            "en": "Pan-fried Battered Beef",
+            "zh": "煎牛肉饼",
+            "ja": "牛肉チヂミ"
+          },
           "price": 18000,
           "image": "images/yukjeon.jpg",
           "description": {
@@ -112,7 +152,12 @@
         },
         {
           "id": "haemul-pajeon",
-          "name": { "ko": "해물파전", "en": "Seafood Green Onion Pancake", "zh": "海鲜葱煎饼", "ja": "海鮮ネギチヂミ" },
+          "name": {
+            "ko": "해물파전",
+            "en": "Seafood Green Onion Pancake",
+            "zh": "海鲜葱煎饼",
+            "ja": "海鮮ネギチヂミ"
+          },
           "price": 18000,
           "image": "images/haemul-pajeon.jpg",
           "description": {
@@ -124,7 +169,12 @@
         },
         {
           "id": "meoригogi",
-          "name": { "ko": "머리고기/편육", "en": "Sliced Boiled Pork Head", "zh": "猪头肉拼盘", "ja": "豚頭肉の薄切り" },
+          "name": {
+            "ko": "머리고기/편육",
+            "en": "Sliced Boiled Pork Head",
+            "zh": "猪头肉拼盘",
+            "ja": "豚頭肉の薄切り"
+          },
           "price": 15000,
           "image": "images/meorigogi.jpg",
           "description": {
@@ -136,7 +186,12 @@
         },
         {
           "id": "dotori-muk",
-          "name": { "ko": "도토리묵무침", "en": "Seasoned Acorn Jelly", "zh": "凉拌橡子凉粉", "ja": "どんぐりムクの和え物" },
+          "name": {
+            "ko": "도토리묵무침",
+            "en": "Seasoned Acorn Jelly",
+            "zh": "凉拌橡子凉粉",
+            "ja": "どんぐりムクの和え物"
+          },
           "price": 15000,
           "image": "images/dotori-muk.jpg",
           "description": {
@@ -148,7 +203,12 @@
         },
         {
           "id": "rice",
-          "name": { "ko": "공기밥", "en": "Steamed Rice", "zh": "白米饭", "ja": "ライス" },
+          "name": {
+            "ko": "공기밥",
+            "en": "Steamed Rice",
+            "zh": "白米饭",
+            "ja": "ライス"
+          },
           "price": 1000,
           "image": "images/rice.jpg",
           "description": {
@@ -171,7 +231,12 @@
       "items": [
         {
           "id": "soju",
-          "name": { "ko": "소주", "en": "Soju", "zh": "烧酒", "ja": "焼酎" },
+          "name": {
+            "ko": "소주",
+            "en": "Soju",
+            "zh": "烧酒",
+            "ja": "焼酎"
+          },
           "price": 5000,
           "image": "images/soju.jpg",
           "description": {
@@ -183,7 +248,12 @@
         },
         {
           "id": "beer",
-          "name": { "ko": "맥주", "en": "Beer", "zh": "啤酒", "ja": "ビール" },
+          "name": {
+            "ko": "맥주",
+            "en": "Beer",
+            "zh": "啤酒",
+            "ja": "ビール"
+          },
           "price": 5000,
           "image": "images/beer.jpg",
           "description": {
@@ -195,7 +265,12 @@
         },
         {
           "id": "makgeolli",
-          "name": { "ko": "막걸리", "en": "Makgeolli", "zh": "米酒", "ja": "マッコリ" },
+          "name": {
+            "ko": "막걸리",
+            "en": "Makgeolli",
+            "zh": "米酒",
+            "ja": "マッコリ"
+          },
           "price": 5000,
           "image": "images/makgeolli.jpg",
           "description": {
@@ -207,7 +282,12 @@
         },
         {
           "id": "moju",
-          "name": { "ko": "모주", "en": "Moju", "zh": "母酒", "ja": "モジュ" },
+          "name": {
+            "ko": "모주",
+            "en": "Moju",
+            "zh": "母酒",
+            "ja": "モジュ"
+          },
           "price": 5000,
           "image": "images/moju.jpg",
           "description": {
@@ -219,7 +299,12 @@
         },
         {
           "id": "cheongha",
-          "name": { "ko": "청하", "en": "Cheongha", "zh": "清酒", "ja": "チョンハ" },
+          "name": {
+            "ko": "청하",
+            "en": "Cheongha",
+            "zh": "清酒",
+            "ja": "チョンハ"
+          },
           "price": 7000,
           "image": "images/cheongha.jpg",
           "description": {
@@ -231,7 +316,12 @@
         },
         {
           "id": "chapssal-saengju",
-          "name": { "ko": "찹쌀생주", "en": "Glutinous Rice Wine", "zh": "糯米生酒", "ja": "もち米生酒" },
+          "name": {
+            "ko": "찹쌀생주",
+            "en": "Glutinous Rice Wine",
+            "zh": "糯米生酒",
+            "ja": "もち米生酒"
+          },
           "price": 10000,
           "image": "images/chapssal-saengju.jpg",
           "description": {
@@ -243,7 +333,12 @@
         },
         {
           "id": "dongdongju",
-          "name": { "ko": "동동주", "en": "Dongdongju", "zh": "浮米酒", "ja": "トンドンジュ" },
+          "name": {
+            "ko": "동동주",
+            "en": "Dongdongju",
+            "zh": "浮米酒",
+            "ja": "トンドンジュ"
+          },
           "price": 11000,
           "image": "images/dongdongju.jpg",
           "description": {
@@ -255,7 +350,12 @@
         },
         {
           "id": "baekseju",
-          "name": { "ko": "백세주", "en": "Baekseju", "zh": "百岁酒", "ja": "百歳酒" },
+          "name": {
+            "ko": "백세주",
+            "en": "Baekseju",
+            "zh": "百岁酒",
+            "ja": "百歳酒"
+          },
           "price": 12000,
           "image": "images/baekseju.jpg",
           "description": {
@@ -267,7 +367,12 @@
         },
         {
           "id": "bokbunja",
-          "name": { "ko": "복분자", "en": "Bokbunja", "zh": "覆盆子酒", "ja": "ボクブンジャ" },
+          "name": {
+            "ko": "복분자",
+            "en": "Bokbunja",
+            "zh": "覆盆子酒",
+            "ja": "ボクブンジャ"
+          },
           "price": 15000,
           "image": "images/bokbunja.jpg",
           "description": {
