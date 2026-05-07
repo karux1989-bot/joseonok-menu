@@ -255,7 +255,7 @@
             "ja": "ビール"
           },
           "price": 5000,
-          "image": "images/beer.jpg",
+          "image": "images/beer.png",
           "description": {
             "ko": "시원한 생맥주 한 잔.",
             "en": "A refreshing glass of draft beer.",
